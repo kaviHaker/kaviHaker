@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>sign in</title>
+    <meta charset="utf-8">
+    
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+<body>
+  <body>
+    <div class="container">
+        <button type="button" class="btn btn-primary" data-toggle="modal"
+        data-target="#loginModal"><i >click me</i></button>
+    <!-- modal -->
+    
+    <div class="modal fade jai" id="loginModal" tabindex="-1"
+    aria-labelledby="loginModalLabel" aria-hidden="true">
+     <div class="modal-dialog ">
+       <div class="modal-content all">
+         <div class="modal-header">
+            <img src="img/logo.png" alt="" width="100px"><span id="login" > Login <span><img src="img/offer.png" alt=" offer" style="align-content: end;" width="100px"></span></span>
+           
+           
+         </div>
+                <div class="modal-body">
+                    <form action="/login" method="post">
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emil"
+                            name="email" value="" placeholder="Enter your e-mail">
+                        </div>
+                        <!-- password -->
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password"
+                            name="password" value="" placeholder="Password">
+                        </div>
+                        <!-- check box -->
+                        <div class="mb-3 from-check">
+                            <input type="checkbox" class="from-check-input" 
+                            id="remember-me" >
+                            <label for="remember-me" class="form-check-label">Remember me  </label>
+                            
+                        </div>
+                        <!-- submit -->
+                        <div class="text-center ">
+                        <button type="submit" class="btn btn-primary submit" > Submit</button>
+                        <span class="right"><a href="#" >Forgot Password?</a></span>
+                        <p>or</p>
+                    </div>
+                        <div class="text-center social-btn">
+                            <a href="#" class="btn " role="button"><i class="fa fa-facebook-square" style="font-size:20px;color:rgb(94, 2, 241)"></i>
+                            </a>
+                                
+                                <a href="#" style="font-size:20px" class="btn " role="button"> <i class="fa fa-google"></i></a>
+                                <a href="#" style="font-size:20px" class="btn " role="button"> <i class="fa fa-twitter"></i></a>
+                                
+        
+                          </div>
+         
+                    </form>
+                </div>
+               
+                <div class="modal-footer">
+                 <span> I am new user 
+                 <a href="#"> <button  type="button"class="btn btn-success">Sign up</button>
+                </a>
+                </span>
+                  
+                </div>
+            </div>
+        </div>
+    
+    </div>
+       </div>
+    
+        </body>
+        </html>
